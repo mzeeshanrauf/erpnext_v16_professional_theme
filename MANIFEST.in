@@ -1,2 +1,3 @@
 include requirements.txt
+include erpnext_v16_professional_theme/patches.txt
 recursive-include erpnext_v16_professional_theme/public *
