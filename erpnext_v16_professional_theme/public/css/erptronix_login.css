@@ -1,4 +1,6 @@
-.for-login {
+/* ErpTronix — styles Frappe/ERPNext stock login page (do not override www/login.*) */
+
+section.for-login {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -7,63 +9,32 @@
   padding: 24px;
 }
 
-.erptronix-login-card {
-  width: min(980px, 100%);
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  background: #ffffff;
+section.for-login .login-content.page-card {
+  width: min(420px, 100%);
+  border-radius: 18px;
   border: 1px solid rgba(15, 23, 42, 0.08);
-  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
 }
 
-.erptronix-login-left {
-  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 35%, #0ea5e9 100%);
-  color: #fff;
-  padding: 40px 36px;
-}
-
-.erptronix-login-left h2 {
-  margin: 0 0 8px;
-  font-size: 30px;
-}
-
-.erptronix-login-left p {
-  margin: 0;
-  opacity: 0.9;
-}
-
-.erptronix-login-right {
-  padding: 40px 36px;
-}
-
-.erptronix-brand {
-  font-size: 28px;
+section.for-login .page-card-head h4,
+section.for-login .page-card-head h2 {
   font-weight: 700;
   color: #0f172a;
-  margin-bottom: 6px;
 }
 
-.erptronix-subtitle {
-  color: #64748b;
-  margin-bottom: 24px;
-}
-
-.erptronix-login-right .form-control {
+section.for-login .form-control {
   border-radius: 10px;
-  border: 1px solid rgba(15, 23, 42, 0.16);
+  border: 1px solid rgba(15, 23, 42, 0.14);
 }
 
-.erptronix-login-right .btn-primary {
-  width: 100%;
+section.for-login .btn-primary {
   border: none;
   border-radius: 10px;
   background: linear-gradient(180deg, #2563eb, #1d4ed8);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
 }
 
-@media (max-width: 900px) {
-  .erptronix-login-card {
-    grid-template-columns: 1fr;
-  }
+section.for-login .btn-primary:hover {
+  background: linear-gradient(180deg, #1d4ed8, #1e40af);
 }
