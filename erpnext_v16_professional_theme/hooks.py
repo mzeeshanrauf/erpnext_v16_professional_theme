@@ -7,5 +7,5 @@ app_license = "MIT"
 
 # Load custom theme on Desk
 app_include_css = [
-    "/assets/erpnext_v16_professional_theme/css/professional_desk_theme.css",
+    "/assets/erpnext_v16_professional_theme/css/erpnext_v16_professional_theme.bundle.css",
 ]

@@ -1,0 +1,133 @@
+:root {
+  --prof-primary: #1f4e8c;
+  --prof-primary-dark: #173e70;
+  --prof-primary-soft: #eaf1fb;
+  --prof-accent: #18a999;
+  --prof-bg: #f5f7fb;
+  --prof-surface: #ffffff;
+  --prof-text: #1d2939;
+  --prof-muted: #667085;
+  --prof-border: #d0d9e5;
+  --prof-shadow: 0 6px 20px rgba(18, 38, 63, 0.08);
+}
+
+body,
+.layout-main-section {
+  background: var(--prof-bg) !important;
+  color: var(--prof-text);
+}
+
+/* Top navigation and app header */
+.navbar,
+.desk-sidebar .standard-sidebar-section,
+.layout-side-section {
+  background: var(--prof-surface) !important;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--prof-border) !important;
+  box-shadow: 0 2px 12px rgba(16, 24, 40, 0.05);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+  color: var(--prof-text) !important;
+}
+
+/* Sidebar */
+.desk-sidebar {
+  background: var(--prof-surface) !important;
+  border-right: 1px solid var(--prof-border);
+}
+
+.standard-sidebar .standard-sidebar-item {
+  border-radius: 10px;
+  margin: 2px 8px;
+}
+
+.standard-sidebar .standard-sidebar-item.selected,
+.standard-sidebar .standard-sidebar-item:hover {
+  background: var(--prof-primary-soft) !important;
+  color: var(--prof-primary) !important;
+}
+
+/* Cards, lists, and panels */
+.widget,
+.number-widget-box,
+.form-dashboard-section,
+.report-summary,
+.frappe-card,
+.list-row-container,
+.form-section,
+.form-page .layout-main-section-wrapper {
+  background: var(--prof-surface) !important;
+  border: 1px solid var(--prof-border) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--prof-shadow);
+}
+
+.list-row-head {
+  background: #f1f5fb !important;
+}
+
+/* Form controls */
+.form-control,
+.control-input,
+.awesomplete > input {
+  border: 1px solid var(--prof-border) !important;
+  border-radius: 10px !important;
+}
+
+.form-control:focus,
+.awesomplete > input:focus {
+  border-color: var(--prof-primary) !important;
+  box-shadow: 0 0 0 3px rgba(31, 78, 140, 0.16) !important;
+}
+
+/* Primary actions */
+.btn-primary {
+  background: linear-gradient(180deg, #2b66b0, var(--prof-primary)) !important;
+  border-color: var(--prof-primary) !important;
+  border-radius: 10px !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(180deg, #245c9f, var(--prof-primary-dark)) !important;
+  border-color: var(--prof-primary-dark) !important;
+}
+
+.btn-secondary,
+.btn-default {
+  border-radius: 10px !important;
+}
+
+/* Workspace cards */
+.widget.onboarding-widget-box,
+.workspace-card {
+  border-radius: 14px !important;
+}
+
+/* Link and highlight consistency */
+a,
+.indicator-pill.blue,
+.text-primary {
+  color: var(--prof-primary) !important;
+}
+
+.indicator-pill.green {
+  color: #0f6d62 !important;
+  background: #d9f3ef !important;
+}
+
+/* Subtle visual polish */
+.page-head,
+.layout-main-section .page-form {
+  background: transparent !important;
+}
+
+.modal-content {
+  border-radius: 14px !important;
+  border: 1px solid var(--prof-border) !important;
+}
