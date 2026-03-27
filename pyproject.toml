@@ -1,0 +1,11 @@
+[project]
+name = "erpnext_v16_professional_theme"
+version = "0.0.1"
+description = "Professional Desk Theme for ERPNext v16"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
