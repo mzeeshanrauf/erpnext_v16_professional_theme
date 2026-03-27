@@ -1,24 +1,25 @@
 :root {
-  --prof-primary: #2563eb;
-  --prof-primary-600: #1d4ed8;
-  --prof-primary-700: #1e40af;
-  --prof-accent: #14b8a6;
+  /* Newara palette */
+  --prof-primary: #714B67;
+  --prof-primary-600: #714b67;
+  --prof-primary-700: #563246;
+  --prof-accent: #017E84;
 
-  --prof-bg: #f6f7fb;
+  --prof-bg: #e5e8eb;
   --prof-surface: #ffffff;
-  --prof-surface-2: #fbfcfe;
+  --prof-surface-2: #f7f8fa;
 
   --prof-text: #0f172a;
-  --prof-muted: #64748b;
-  --prof-border: rgba(15, 23, 42, 0.10);
+  --prof-muted: #4b5563;
+  --prof-border: #714b6740;
 
   --prof-radius-sm: 10px;
   --prof-radius-md: 14px;
   --prof-radius-lg: 18px;
 
   --prof-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
-  --prof-shadow: 0 12px 30px rgba(15, 23, 42, 0.10);
-  --prof-ring: 0 0 0 4px rgba(37, 99, 235, 0.16);
+  --prof-shadow: 0 12px 30px rgba(113, 75, 103, 0.12);
+  --prof-ring: 0 0 0 4px rgba(1, 126, 132, 0.16);
 }
 
 body,
@@ -72,7 +73,7 @@ body {
 
 .standard-sidebar .standard-sidebar-item.selected,
 .standard-sidebar .standard-sidebar-item:hover {
-  background: rgba(37, 99, 235, 0.10) !important;
+  background: #017E8420 !important;
   color: var(--prof-primary) !important;
 }
 
@@ -116,15 +117,18 @@ body {
 
 /* Primary actions */
 .btn-primary {
-  background: linear-gradient(180deg, var(--prof-primary), var(--prof-primary-600)) !important;
-  border-color: rgba(0, 0, 0, 0) !important;
+  /* Match Newara button style: outline primary */
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid var(--prof-primary) !important;
   border-radius: var(--prof-radius-sm) !important;
-  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.18);
+  box-shadow: none !important;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: linear-gradient(180deg, var(--prof-primary-600), var(--prof-primary-700)) !important;
+  background: var(--prof-surface) !important;
+  color: var(--prof-text) !important;
 }
 
 .btn-secondary,
