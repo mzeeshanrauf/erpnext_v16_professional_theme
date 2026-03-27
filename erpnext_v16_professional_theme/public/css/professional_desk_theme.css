@@ -1,20 +1,36 @@
 :root {
-  --prof-primary: #1f4e8c;
-  --prof-primary-dark: #173e70;
-  --prof-primary-soft: #eaf1fb;
-  --prof-accent: #18a999;
-  --prof-bg: #f5f7fb;
+  --prof-primary: #2563eb;
+  --prof-primary-600: #1d4ed8;
+  --prof-primary-700: #1e40af;
+  --prof-accent: #14b8a6;
+
+  --prof-bg: #f6f7fb;
   --prof-surface: #ffffff;
-  --prof-text: #1d2939;
-  --prof-muted: #667085;
-  --prof-border: #d0d9e5;
-  --prof-shadow: 0 6px 20px rgba(18, 38, 63, 0.08);
+  --prof-surface-2: #fbfcfe;
+
+  --prof-text: #0f172a;
+  --prof-muted: #64748b;
+  --prof-border: rgba(15, 23, 42, 0.10);
+
+  --prof-radius-sm: 10px;
+  --prof-radius-md: 14px;
+  --prof-radius-lg: 18px;
+
+  --prof-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --prof-shadow: 0 12px 30px rgba(15, 23, 42, 0.10);
+  --prof-ring: 0 0 0 4px rgba(37, 99, 235, 0.16);
 }
 
 body,
 .layout-main-section {
   background: var(--prof-bg) !important;
   color: var(--prof-text);
+}
+
+/* Slightly tighter, more modern typography */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Top navigation and app header */
@@ -26,13 +42,20 @@ body,
 
 .navbar {
   border-bottom: 1px solid var(--prof-border) !important;
-  box-shadow: 0 2px 12px rgba(16, 24, 40, 0.05);
+  box-shadow: var(--prof-shadow-sm);
+  backdrop-filter: saturate(180%) blur(10px);
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link,
 .navbar .dropdown-toggle {
   color: var(--prof-text) !important;
+}
+
+/* Page container spacing / “dashboard” feel */
+.layout-main-section-wrapper,
+.page-container {
+  border-radius: var(--prof-radius-lg);
 }
 
 /* Sidebar */
@@ -42,14 +65,19 @@ body,
 }
 
 .standard-sidebar .standard-sidebar-item {
-  border-radius: 10px;
+  border-radius: var(--prof-radius-sm);
   margin: 2px 8px;
+  transition: background 120ms ease, color 120ms ease, transform 120ms ease;
 }
 
 .standard-sidebar .standard-sidebar-item.selected,
 .standard-sidebar .standard-sidebar-item:hover {
-  background: var(--prof-primary-soft) !important;
+  background: rgba(37, 99, 235, 0.10) !important;
   color: var(--prof-primary) !important;
+}
+
+.standard-sidebar .standard-sidebar-item:hover {
+  transform: translateY(-1px);
 }
 
 /* Cards, lists, and panels */
@@ -63,12 +91,12 @@ body,
 .form-page .layout-main-section-wrapper {
   background: var(--prof-surface) !important;
   border: 1px solid var(--prof-border) !important;
-  border-radius: 12px !important;
-  box-shadow: var(--prof-shadow);
+  border-radius: var(--prof-radius-md) !important;
+  box-shadow: var(--prof-shadow-sm);
 }
 
 .list-row-head {
-  background: #f1f5fb !important;
+  background: var(--prof-surface-2) !important;
 }
 
 /* Form controls */
@@ -76,37 +104,38 @@ body,
 .control-input,
 .awesomplete > input {
   border: 1px solid var(--prof-border) !important;
-  border-radius: 10px !important;
+  border-radius: var(--prof-radius-sm) !important;
+  box-shadow: none !important;
 }
 
 .form-control:focus,
 .awesomplete > input:focus {
   border-color: var(--prof-primary) !important;
-  box-shadow: 0 0 0 3px rgba(31, 78, 140, 0.16) !important;
+  box-shadow: var(--prof-ring) !important;
 }
 
 /* Primary actions */
 .btn-primary {
-  background: linear-gradient(180deg, #2b66b0, var(--prof-primary)) !important;
-  border-color: var(--prof-primary) !important;
-  border-radius: 10px !important;
+  background: linear-gradient(180deg, var(--prof-primary), var(--prof-primary-600)) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+  border-radius: var(--prof-radius-sm) !important;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.18);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: linear-gradient(180deg, #245c9f, var(--prof-primary-dark)) !important;
-  border-color: var(--prof-primary-dark) !important;
+  background: linear-gradient(180deg, var(--prof-primary-600), var(--prof-primary-700)) !important;
 }
 
 .btn-secondary,
 .btn-default {
-  border-radius: 10px !important;
+  border-radius: var(--prof-radius-sm) !important;
 }
 
 /* Workspace cards */
 .widget.onboarding-widget-box,
 .workspace-card {
-  border-radius: 14px !important;
+  border-radius: var(--prof-radius-lg) !important;
 }
 
 /* Link and highlight consistency */
@@ -118,7 +147,7 @@ a,
 
 .indicator-pill.green {
   color: #0f6d62 !important;
-  background: #d9f3ef !important;
+  background: rgba(20, 184, 166, 0.16) !important;
 }
 
 /* Subtle visual polish */
@@ -128,6 +157,7 @@ a,
 }
 
 .modal-content {
-  border-radius: 14px !important;
+  border-radius: var(--prof-radius-lg) !important;
   border: 1px solid var(--prof-border) !important;
+  box-shadow: var(--prof-shadow);
 }
