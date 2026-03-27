@@ -1,13 +1,13 @@
-# ERPNext v16 Professional Desk Theme
+# ErpTronix ERPNext v16 Theme
 
-Professional and clean desk theme for ERPNext/Frappe v16.
+Professional and modern theme package for ERPNext/Frappe v16.
 
 ## What this changes
 
-- Professional blue-gray brand palette
-- Refined navbar, cards, buttons, and list view styling
-- Better contrast, softer shadows, modern spacing
-- Focus on Desk (backend) UX
+- Modern Desk UI styling and polish
+- Custom branded login page (`/login`) with ErpTronix identity
+- Additional custom DocTypes for dashboard and card mappings
+- Focus on backend usability and visual consistency
 
 ## Install
 

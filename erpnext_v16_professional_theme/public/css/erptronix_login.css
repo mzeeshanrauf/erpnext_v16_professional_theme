@@ -1,0 +1,69 @@
+.for-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #dbeafe 0, #f8fafc 45%, #eef2ff 100%);
+  padding: 24px;
+}
+
+.erptronix-login-card {
+  width: min(980px, 100%);
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+.erptronix-login-left {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 35%, #0ea5e9 100%);
+  color: #fff;
+  padding: 40px 36px;
+}
+
+.erptronix-login-left h2 {
+  margin: 0 0 8px;
+  font-size: 30px;
+}
+
+.erptronix-login-left p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.erptronix-login-right {
+  padding: 40px 36px;
+}
+
+.erptronix-brand {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.erptronix-subtitle {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.erptronix-login-right .form-control {
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.16);
+}
+
+.erptronix-login-right .btn-primary {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #2563eb, #1d4ed8);
+}
+
+@media (max-width: 900px) {
+  .erptronix-login-card {
+    grid-template-columns: 1fr;
+  }
+}

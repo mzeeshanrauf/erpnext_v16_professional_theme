@@ -1,0 +1,29 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FC..#####",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": ["number_card_name", "doctype_form", "column_break_ovgo", "label"],
+ "fields": [
+  {"fieldname": "number_card_name", "fieldtype": "Link", "in_list_view": 1, "label": "Number Card Name", "options": "Number Card", "reqd": 1},
+  {"fieldname": "doctype_form", "fieldtype": "Link", "in_list_view": 1, "label": "Doctype Form", "options": "DocType", "reqd": 1},
+  {"fieldname": "column_break_ovgo", "fieldtype": "Column Break"},
+  {"allow_in_quick_entry": 1, "fieldname": "label", "fieldtype": "Data", "label": "Label"}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "ERPNext V16 Professional Theme",
+ "name": "Form Number Card",
+ "naming_rule": "Expression (old style)",
+ "permissions": [
+  {"email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "All", "share": 1},
+  {"create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1},
+  {"create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "Dashboard Manager", "share": 1, "write": 1}
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

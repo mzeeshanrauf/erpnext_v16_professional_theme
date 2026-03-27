@@ -1,0 +1,20 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": ["page_name"],
+ "fields": [
+  {"fieldname": "page_name", "fieldtype": "Link", "in_list_view": 1, "label": "Page Name", "options": "Page", "reqd": 1}
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "module": "ERPNext V16 Professional Theme",
+ "name": "Theme Settings Hide Layout Pages",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
